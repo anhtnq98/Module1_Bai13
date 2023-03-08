@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lãi suất ngân hàng</title>
+</head>
+
+<body>
+    <script>
+        let money = +prompt("Nhập số tiền muốn gửi")
+        let month = +prompt("Nhập số tháng muốn gửi")
+        let ls = +prompt("Nhập số tiền lãi mỗi năm")
+        let tienLai; // tiền lãi 1 tháng
+        for (let i = 1; i <= month; i++) {
+            tienLai = money * ls / 12;
+            money += tienLai;
+        }
+        document.write(money.toFixed(3))
+
+    </script>
+</body>
+
+</html>
